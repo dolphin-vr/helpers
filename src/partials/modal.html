@@ -1,0 +1,39 @@
+<button data-modal-open type="button" class="order-btn btn">Order Service 1</button>
+<button data-modal-open type="button" class="order-btn btn">Order Service 2</button>
+<button data-modal-open type="button" class="order-btn btn">Order Service 3</button>
+
+<!-- order service modal window -->
+<div class="backdrop is-hidden" data-modal>
+   <div class="modal">
+       <button data-modal-close class="close-btn" aria-label="Close window" type="button">
+           <svg class="icon"><use href="./img/sprite.svg#ico-close"></use></svg>
+       </button>
+       <h2 class="title">Leave your contacts and we will call you back</h2>
+       <form name="order" autocomplete="on" class="order">
+           <label class="form-label">
+               <input type="text" class="input" name="name" placeholder=" "/>
+               <span class="order-label">Name</span>
+               <svg class="order-icon"><use href="./img/sprite.svg#ico-user"></use></svg>
+           </label>
+           <label class="form-label">
+               <input type="tel" class="input" name="phone" placeholder=" "/>
+               <span class="order-label">Phone</span>
+               <svg class="order-icon"><use href="./img/sprite.svg#ico-oldphone"></use></svg>
+           </label>
+           <label class="form-label">
+               <input type="email" class="input" name="email" placeholder=" "/>
+               <span class="order-label">Email</span>
+               <svg class="order-icon"><use href="./img/sprite.svg#ico-mail"></use></svg>
+           </label>
+           <label class="comment">
+               <span class="label">Comment</span>
+               <textarea class="textarea" name="img" rows="7" placeholder="Text input"></textarea>
+             </label>
+             <label class="checkbox">
+               <input class="check invisible" type="checkbox" name="accept" value="accept" />
+               <span class="label">I accept the terms and conditions of the <a href="">Privacy Policy</a></span>
+             </label>
+             <button type="submit" class="submit-btn btn">Send</button>
+       </form>
+   </div>
+</div>
